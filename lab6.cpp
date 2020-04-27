@@ -11,7 +11,7 @@ vector<double> slidingWindow(vector<double> x, vector<double> p, double h) {
 			x2[1] = x[1];
 			x1[0] -= h;
 			x2[0] += h;
-			x1[1] += p[1] / p[0] * h;
+			x1[1] -= p[1] / p[0] * h;
 			x2[1] += p[1] / p[0] * h;
 			interval[0] = x1[0];
 			interval[1] = x2[0];
